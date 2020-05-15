@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuUtama"
+    android:background="@color/biru">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/biru"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/foto_bulat"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:padding="10dp"
+        android:src="@drawable/foto_kecil" />
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_toRightOf="@+id/foto_bulat"
+        android:gravity="center|left"
+        android:textColor="@color/putih"
+        android:textSize="25dp"
+        android:text="@string/nama" />
+
+    <View
+        android:id="@+id/batas"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/head"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="?android:attr/listDivider" />
+    <TextView
+        android:id="@+id/profile"
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_below="@+id/batas"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/putih"
+        android:text="@string/profile"
+        />
+
+    <View
+        android:id="@+id/garis_profile"
+        android:layout_width="80dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/profile"
+        android:background="@color/putih" />
+
+    <ImageView
+        android:id="@+id/foto_fadli"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/garis_profile"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        app:srcCompat="@drawable/foto_pribadi" />
+
+    <TextView
+        android:id="@+id/deskripsi_fadli"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/foto_fadli"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/putih"
+        android:gravity="center"
+        android:layout_below="@id/garis_profile"
+        android:text="@string/deskripsi_fadli" />
+    <TextView
+        android:id="@+id/interest"
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_below="@+id/foto_fadli"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/putih"
+        android:text="@string/interest"
+        />
+
+    <View
+        android:id="@+id/garis_interest"
+        android:layout_width="80dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/interest"
+        android:background="@color/putih" />
+    <ImageView
+        android:id="@+id/logo_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/garis_interest"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/games"
+        />
+    <TextView
+        android:id="@+id/hobi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_game"
+        android:text="@string/hobi_1"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="18dp"
+        android:textSize="15dp"
+        android:textColor="@color/pink"/>
+    <TextView
+        android:id="@+id/hobi_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hobi"
+        android:layout_marginLeft="40dp"
+        android:textSize="8dp"
+        android:gravity="center"
+        android:textColor="@color/putih"
+        android:text="@string/hobi_2"
+        />
+
+    <ImageView
+        android:id="@+id/makanan"
+        android:layout_width="77dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/garis_interest"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="37dp"
+        android:layout_toRightOf="@+id/logo_game"
+        android:background="@drawable/makan" />
+    <TextView
+        android:id="@+id/makan_minum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/makanan"
+        android:layout_toRightOf="@id/hobi"
+        android:textColor="@color/hijau"
+        android:text="@string/makan_1"
+        android:textSize="13dp"
+        android:layout_marginLeft="27dp"/>
+
+    <TextView
+        android:id="@+id/makan_minum_des"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/makan_minum"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/hobi_2"
+        android:gravity="center"
+        android:text="@string/makan_2"
+        android:textColor="@color/putih"
+        android:textSize="8dp" />
+    <ImageView
+        android:id="@+id/tertarik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hobi_2"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/suka"
+        />
+    <TextView
+        android:id="@+id/ketertarikan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tertarik"
+        android:text="@string/ketertarikan"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="50dp"
+        />
+
+    <TextView
+        android:id="@+id/ketertarikan_des"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ketertarikan"
+        android:text="@string/ketertarikan_2"
+        android:textSize="8dp"
+        android:textColor="@color/putih"
+        android:gravity="center"
+        android:layout_marginLeft="21dp"/>
+
+    <ImageView
+        android:id="@+id/cita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/makan_minum_des"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/tertarik"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/cita2"/>
+    <TextView
+        android:id="@+id/cita2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cita"
+        android:layout_toRightOf="@+id/ketertarikan_des"
+        android:text="@string/cita2_1"
+        android:textSize="15dp"
+        android:textColor="@color/kuning"
+        android:layout_marginLeft="75dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cita2"
+        android:layout_toRightOf="@+id/ketertarikan_des"
+        android:text="@string/cita2_2"
+        android:textSize="8dp"
+        android:textColor="@color/putih"
+        android:layout_marginLeft="57dp"
+        />
+
+
+</RelativeLayout>

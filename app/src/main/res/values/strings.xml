@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DLI</string>
+    <string name="nama">DLI Apps</string>
+    <string name="profile">Profile</string>
+    <string name="interest">Interest</string>
+    <string name="hobi_1">Bermain Video Games</string>
+    <string name="hobi_2">( CSO, OSU, Call of Duty Mobile, Clash of Clans )</string>
+    <string name="makan_1">Makanan dan Minumanan</string>
+    <string name="makan_2">( Nasi Goreng, Ketoprak, Gado - gado, Mie Sedap, Susu Cokelat  )</string>
+    <string name="ketertarikan">Ketertarikan</string>
+    <string name="ketertarikan_2">( Kucing, Mendaki, Hamster dan Burung Hantu )</string>
+    <string name="cita2_1">Cita - cita</string>
+    <string name="cita2_2">Membahagiakan Orang Tua :)</string>
+    <string name="nomer_hp">+6285-156-414-678</string>
+    <string name="email">Fadli</string>
+    <string name="teman">Daftar Teman</string>
+    <string name="kegiatan">Daily Activity</string>
+    <string name="video_1">Giorno Giovanno - Angin Emas (OSGDmemes Koplo InDie Mix)</string>
+    <string name="video_2">MV | Jack Stauber - Buttercup</string>
+    <string name="video_3">Breakbot - Baby Im Yours</string>
+    <string name="map">Ciborelang, Majalengka</string>
+    <string name="deskripsi_fadli">Hai!! Nama saya Wisuda Nur Fadli tapi biasa dipanggil Fadli. Umur saya 20 tahun dan foto ini diambil ketika liburan keluarga tahun lalu.</string>
+</resources>
